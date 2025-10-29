@@ -58,6 +58,25 @@ float dziel(float x, float y) {
     }
 }*/
 
+/*zadanie 4
+int potega(int  a, int b) {
+    int wyn;
+    wyn = 1;
+    for (int i = 0; i < b; i++) {
+         wyn *= a;
+    }
+    return wyn;
+}*/
+
+/*zadanie 5
+int silnia(int n) {
+    int wyn = 1;
+    for (int i = 1; i <= n; i++) {
+        wyn *= i;
+    }
+    return wyn;
+}*/
+
 int main()
 {
     /*zadanie 1
@@ -123,9 +142,26 @@ int main()
         }
     }*/
 
+    /*zadanie 4
+    int x, y;
+    cout << "Wprowadz a: ";
+    cin >> x;
+    cout << "Wprowadz b: ";
+    cin >> y;
+
+    cout << potega(x, y);*/
 
 
-
+    /*zadanie 5
+    int x;
+    do {
+        cout << "Wprowadz n: ";
+        cin >> x;
+    } while (x < 0);
+    
+    if (x >= 0) {
+        cout << x << "! = " << silnia(x) << endl;
+    }*/
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
