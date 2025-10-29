@@ -4,6 +4,14 @@
 #include <iostream>
 using namespace std;
 
+int funkcja1(int a, int b) {
+
+}
+
+int funkcja2(int a, int b) {
+
+}
+
 int main()
 {
     cout << "Hello World!\n";
