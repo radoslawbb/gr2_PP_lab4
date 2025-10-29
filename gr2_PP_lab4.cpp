@@ -4,17 +4,34 @@
 #include <iostream>
 using namespace std;
 
-int funkcja1(int a, int b) {
-
+void funkcja1(int a, int b) {
+    if (a > b) {
+        cout << "Liczba " << a << " jest wieksza" << endl;
+    }
+    else {
+        cout << "Liczba " << b << " jest wieksza" << endl;
+    }
 }
 
 int funkcja2(int a, int b) {
-
+    if (a > b) {
+        return a;
+    }
+    else {
+        return b;
+    }
 }
 
 int main()
 {
-    cout << "Hello World!\n";
+    int x, y;
+    cout << "Wprowadz liczbe a: ";
+    cin >> x;
+    cout << "Wprowadz liczbe b: ";
+    cin >> y;
+
+    funkcja1(x, y);
+    cout << "Wieksza liczba to: " << funkcja2(x, y) << endl;
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
