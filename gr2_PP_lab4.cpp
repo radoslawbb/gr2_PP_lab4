@@ -2,6 +2,8 @@
 //
 
 #include <iostream>
+#include <cmath>
+#include <time.h>
 using namespace std;
 
 
@@ -76,6 +78,59 @@ int silnia(int n) {
     }
     return wyn;
 }*/
+
+/*zadanie 6.1
+int dwaDoN(int n) {
+    if (n < 0) {
+        cout << "To nie jest liczba naturalna" << endl;
+    }
+    else {
+        int wyn = 1;
+        for (int i = 1; i <= n; i++) {
+            wyn *= 2;
+        }
+        return wyn;
+    }
+}*/
+
+/*zadanie 7
+void szczesliwyNumerek(int numerek) {
+    float licz = 0;
+    srand(time(0));
+    for (int i = 0; i < 10; i++) {
+        int los = rand() % 10 + 1;
+        cout << los << endl;
+        if (los == numerek) {
+            licz++;
+        }
+    }
+    float proc = (licz / 10) * 100;
+
+    cout << "Szczesliwy numerek wystapil " << licz << " razy. Stanowi to " << proc << "% wszystkich wylosowanych liczb" << endl;
+}*/
+
+
+int parzysta(int n) {
+    int wyn = n / 2;
+    return wyn;
+}
+
+int nieParzysta(int n) {
+    int wyn = (n - 1) / 2;
+    return wyn;
+}
+
+void stoLiczb() {
+    for (int i = 0; i <= 100; i++) {
+        cout << i << endl;
+        if (i % 2 == 0) {
+            cout << "n/2 = " << parzysta(i) << endl;;
+        }
+        else {
+            cout << "(n-1)/2 = " << nieParzysta(i) << endl;
+        }
+    }
+}
 
 int main()
 {
@@ -162,6 +217,29 @@ int main()
     if (x >= 0) {
         cout << x << "! = " << silnia(x) << endl;
     }*/
+
+
+    /*zadanie 6.1
+    int liczba;
+
+    cout << "Podaj liczbe naturalna: ";
+    cin >> liczba;
+    cout << "2^n = " << dwaDoN(liczba) << endl;*/
+
+    /*zadanie 6.2
+    int liczba;
+
+    cout << "Podaj liczbe naturalna: ";
+    cin >> liczba;
+    cout << "2^n = " << pow(2,liczba) << endl;*/
+
+    /*zadanie 7
+    int num;
+    cout << "Podaj szczesliwy numerek: ";
+    cin >> num;
+    szczesliwyNumerek(num);*/
+
+    stoLiczb();
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
