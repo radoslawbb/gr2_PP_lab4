@@ -109,7 +109,7 @@ void szczesliwyNumerek(int numerek) {
     cout << "Szczesliwy numerek wystapil " << licz << " razy. Stanowi to " << proc << "% wszystkich wylosowanych liczb" << endl;
 }*/
 
-
+/*zadanie 8 */
 int parzysta(int n) {
     int wyn = n / 2;
     return wyn;
@@ -239,6 +239,7 @@ int main()
     cin >> num;
     szczesliwyNumerek(num);*/
 
+    /*zadanie 8 */
     stoLiczb();
 }
 
